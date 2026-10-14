@@ -16,7 +16,7 @@
             $apellidos = $_POST['Apellidos'];
             $correo = $_POST['Correo'];
 
-            $uri = 'mongodb+srv://mariobg_db_user:JaGaW9EZcUuHt6OF@cluster0.q9wfhgy.mongodb.net/?appName=Cluster0';
+            $uri = 'mongodb://localhost:27017';
             $cliente = new MongoDB\Client($uri);
                 
             $admin = $cliente->admin;
